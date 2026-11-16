@@ -13,6 +13,7 @@ resource "cloudflare_pages_project" "chinese_flashcards" {
       preview_deployment_setting = "none"
       owner                      = var.github_owner
       repo_name                  = var.github_repo
+      deployments_enabled = true
     }
     type = "github"
   }
